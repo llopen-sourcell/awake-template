@@ -41,4 +41,6 @@ After the first scan we can then scan from the back editing the string as we go
 
 we can see a java implementation of this algorithm below
 
-``
+```
+public void replaceSpaces(char[] str, int length) {int spaceCount = 0, newLength, i; for (i = 0; i < length; i++) {  if (str[i] == ' ') {   spaceCount++;  } } newLength = length + spaceCount * 2; str[newLength] = '\0'; for (i = length - 1; i >= 0; i--) {  if (str[i] == ' ') {   str[newLength - 1] = '0';   strfnewLength - 2] = '2';  str[newLength - 3] = '%';  newLength = newLength - 3; } else {  str[newLength - 1] = str[i];  newLength = newLength - 1; }}}
+```
