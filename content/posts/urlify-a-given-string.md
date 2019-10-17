@@ -25,9 +25,9 @@ The code for this method is
 
 Now there is another case to it
 
-Input :- "Mr John Smith   ",16
+Input :-` "Mr John Smith   ",16`
 
-Output:-  "Mr%20John%20Smith"
+Output:- ` "Mr%20John%20Smith"`
 
 Here we assume there is enough space in the string to accommodate all the extra characters
 
