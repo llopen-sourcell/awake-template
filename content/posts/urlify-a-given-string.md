@@ -20,7 +20,7 @@ This is the simplest method, all it does is iterate through the string an insert
 The code for this method is 
 
 ```
-#python 3url="   Hello World     "char=char.strip()char=char.replace(' ' ,'%20') print char 
+#python 3url="   Hello World     "char=char.strip()char=char.replace(' ' ,'%20')print char 
 ```
 
 Now there is another case to it
@@ -41,6 +41,44 @@ After the first scan we can then scan from the back editing the string as we go
 
 we can see a java implementation of this algorithm below
 
-```
-public void replaceSpaces(char[] str, int length) {int spaceCount = 0, newLength, i; for (i = 0; i < length; i++) {      if (str[i] == ' ') {         spaceCount++;      }   } newLength = length + spaceCount * 2;   str[newLength] = '\0';   for (i = length - 1; i >= 0; i--) {     if (str[i] == ' ') {       str[newLength - 1] = '0';       strfnewLength - 2] = '2';       str[newLength - 3] = '%';       newLength = newLength - 3;     }     else {           str[newLength - 1] = str[i];           newLength = newLength - 1;     }   }}
-```
+`public void replaceSpaces(char[] str, int length) {`
+
+` int spaceCount = 0, newLength, i;`
+
+` for (i = 0; i < length; i++) {`
+
+`  if (str[i] == ' ') {`
+
+`   spaceCount++;`
+
+`  }`
+
+` }`
+
+` newLength = length + spaceCount * 2;`
+
+` str[newLength] = '\0';`
+
+` for (i = length - 1; i >= 0; i--) {`
+
+`  if (str[i] == ' ') {`
+
+`   str[newLength - 1] = '0';`
+
+`   strfnewLength - 2] = '2';`
+
+`  str[newLength - 3] = '%';`
+
+`  newLength = newLength - 3;`
+
+` } else {`
+
+`  str[newLength - 1] = str[i];`
+
+`  newLength = newLength - 1;`
+
+` }`
+
+`}`
+
+`}`
