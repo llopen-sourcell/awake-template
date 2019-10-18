@@ -43,44 +43,48 @@ After the first scan we can then scan from the back editing the string as we go
 
 we can see a java implementation of this algorithm below
 
-`public void replaceSpaces(char[] str, int length) {`
+<code>
 
-`    int spaceCount = 0, newLength, i;`
+public void replaceSpaces(char\[] str, int length) {
 
-`    for (i = 0; i < length; i++) {`
+int spaceCount = 0, newLength, i;
 
-`        if (str[i] == ' ') {`
+for (i = 0; i < length; i++) {
 
-`            spaceCount++;`
+if (str\[i] == ' ') {
 
-`        }`
+spaceCount++;
 
-`    }`
+}
 
-`    newLength = length + spaceCount * 2;`
+}
 
-`    str[newLength] = '\0';`
+newLength = length + spaceCount * 2;
 
-`    for (i = length - 1; i >= 0; i--) {`
+str\[newLength] = '\0';
 
-`        if (str[i] == ' ') {`
+for (i = length - 1; i >= 0; i--) {
 
-`            str[newLength - 1] = '0';`
+if (str\[i] == ' ') {
 
-`            strfnewLength - 2] = '2';`
+str\[newLength - 1] = '0';
 
-`        str[newLength - 3] = '%';`
+strfnewLength - 2] = '2';
 
-`        newLength = newLength - 3;`
+str\[newLength - 3] = '%';
 
-`    } else {`
+newLength = newLength - 3;
 
-`        str[newLength - 1] = str[i];`
+} else {
 
-`        newLength = newLength - 1;`
+str\[newLength - 1] = str\[i];
 
-`    }`
+newLength = newLength - 1;
 
-`}`
+}
 
-`}`
+}
+
+}
+
+</code>
