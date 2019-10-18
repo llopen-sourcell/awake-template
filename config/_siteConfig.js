@@ -29,7 +29,7 @@ export default {
     {
       name: 'Categories',
       link: '/categories'
-    },
+    }
  
   ],
   hero: {
