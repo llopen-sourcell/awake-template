@@ -19,15 +19,17 @@ This is the simplest method, all it does is iterate through the string an insert
 
 The code for this method is 
 
-```
-#python 3url="   Hello World     "char=char.strip()char=char.replace(' ' ,'%20')print char 
-```
+`#python 3`\
+`url="   Hello World     "`\
+`char=char.strip()`\
+`char=char.replace(' ' ,'%20')`\
+`print char `
 
 Now there is another case to it
 
-Input :-` "Mr John Smith   ",16`
+Input :-`"Mr John Smith   ",16`
 
-Output:- ` "Mr%20John%20Smith"`
+Output:- `"Mr%20John%20Smith"`
 
 Here we assume there is enough space in the string to accommodate all the extra characters
 
