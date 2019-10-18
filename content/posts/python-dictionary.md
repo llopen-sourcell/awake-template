@@ -5,7 +5,7 @@ category:
   - Programming
 author: Anand Murali
 date: 2019-10-18T09:44:05.496Z
-featureImage: /uploads/about-hero.jpg
+featureImage: /uploads/black-and-white-data-definition-267669.jpg
 ---
 What are dictionaries in python?
 
