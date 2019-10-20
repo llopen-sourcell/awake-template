@@ -3,7 +3,7 @@ title: Learning C | Hello World
 subtitle: Learning C | Hello World
 category:
   - Programming
-author: Daniel Kelly
+author: Anand Murali
 date: 2019-10-17T15:55:47.772Z
 featureImage: /uploads/resource-grid-hero.jpg
 ---
